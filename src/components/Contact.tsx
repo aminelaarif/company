@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, MessageSquare, Phone, MapPin, Clock, Globe } from "lucide-react";
+import { useState } from "react";
 
 const contactInfo = {
   email: "hello@futureweb.com",
@@ -14,13 +15,35 @@ const contactInfo = {
 };
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value }); 
+
+    console.log(e.target.value)
+    console.log(formData)
+  };
+
+  const handleSubmit = (e)=>{
+ 
+    console.log(formData)
+    e.preventDefault()
+  }
+
   return (
     <section id="contact" className="py-20 relative overflow-hidden bg-gaming-dark">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-purple/20 via-transparent to-transparent opacity-50"
+        className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-purple/20 via-transparent to-transparent opacity-50"
       />
 
       <div className="container mx-auto px-4">
@@ -76,12 +99,16 @@ const Contact = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            onSubmit={handleSubmit} 
             className="space-y-6"
           >
             <div className="space-y-4">
               <motion.input
                 whileFocus={{ scale: 1.02 }}
                 type="text"
+                name="name"
+                onChange={handleChange}
+                value={formData.name}
                 placeholder="Your Name"
                 className="w-full px-4 py-3 bg-black/50 border border-neon-blue/20 rounded-lg focus:border-neon-blue/50 transition-colors duration-300 outline-none text-white animate-pulse-border"
               />
@@ -89,11 +116,20 @@ const Contact = () => {
                 whileFocus={{ scale: 1.02 }}
                 type="email"
                 placeholder="Your Email"
+                name="email"
+                onChange={handleChange}
+                value={formData.email}
+               
+               
                 className="w-full px-4 py-3 bg-black/50 border border-neon-blue/20 rounded-lg focus:border-neon-blue/50 transition-colors duration-300 outline-none text-white animate-pulse-border"
               />
               <motion.select
+
+                name="service"
                 whileFocus={{ scale: 1.02 }}
                 className="w-full px-4 py-3 bg-black/50 border border-neon-blue/20 rounded-lg focus:border-neon-blue/50 transition-colors duration-300 outline-none text-white animate-pulse-border"
+                onChange={handleChange}
+                value={formData.service}
               >
                 <option value="">Select Service</option>
                 <option value="web-development">Web Development</option>
@@ -104,7 +140,11 @@ const Contact = () => {
               <motion.textarea
                 whileFocus={{ scale: 1.02 }}
                 placeholder="Your Message"
+                onChange={handleChange}
+                value={formData.message}
                 rows={4}
+                name="message"
+               
                 className="w-full px-4 py-3 bg-black/50 border border-neon-blue/20 rounded-lg focus:border-neon-blue/50 transition-colors duration-300 outline-none text-white resize-none animate-pulse-border"
               />
             </div>
