@@ -13,6 +13,16 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
+  const handleSmoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -36,6 +46,10 @@ const Navigation = () => {
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSmoothScroll(item.toLowerCase());
+                }}
                 whileHover={{ scale: 1.1, color: '#9b87f5' }}
                 className="text-white/80 hover:text-white transition-colors"
               >
