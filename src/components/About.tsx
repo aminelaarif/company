@@ -43,10 +43,10 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, y: -5 }}
+              whileHover={{ scale: 1, y: -5 }}
               className="relative group"
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-neon-purple to-neon-pink rounded-xl opacity-20 group-hover:opacity-100 transition-opacity blur" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-neon-purple to-neon-pink rounded-xl opacity-20 group-hover:opacity-50 transition-opacity blur" />
               <div className="relative p-8 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xl">
                 <motion.div
                   animate={{ 
