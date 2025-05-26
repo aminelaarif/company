@@ -47,20 +47,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 rounded-lg bg-neon-purple text-white font-medium hover:bg-neon-purple/90 transition-colors"
-            >
-              Get Started
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 rounded-lg border border-white/20 text-white font-medium hover:bg-white/10 transition-colors"
-            >
-              Learn More
-            </motion.button>
+       
           </motion.div>
         </motion.div>
       </div>

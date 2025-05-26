@@ -5,35 +5,21 @@ const projects = [
   {
     title: "Neon Pulse Gaming",
     category: "Gaming Platform",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: "https://imgs.search.brave.com/dn00OEH4OT0HDVSzhIczgDXAONMiZtEJW_kPPrLuaig/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by91/aS11eC1yZXByZXNl/bnRhdGlvbnMtd2l0/aC1sYXB0b3BfMjMt/MjE1MDIwMTg3MS5q/cGc_c2VtdD1haXNf/aHlicmlk",   
     description: "Next-gen gaming platform with immersive UI",
     tech: ["React", "Three.js", "WebGL"],
     icon: Code
   },
-  {
-    title: "Cyber Analytics",
-    category: "Data Visualization",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-    description: "Real-time data visualization dashboard",
-    tech: ["D3.js", "Node.js", "WebSocket"],
-    icon: Cpu
-  },
+
   {
     title: "Digital Nexus",
     category: "Web Application",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "https://imgs.search.brave.com/L7tD1WTtj5QFSKINQK6ke7pkPeVtUNgwLwC9GcjX0es/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzkwLzcxLzI4/LzM2MF9GXzk5MDcx/Mjg2Ml92S0VJaFh5/Z25EbFdtOFFRUWds/TUJoRmNtNldRUEVi/Uy5qcGc",
     description: "Enterprise-grade web application platform",
     tech: ["Next.js", "GraphQL", "AWS"],
     icon: Globe
   },
-  {
-    title: "Neo Interface",
-    category: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    description: "Futuristic interface design system",
-    tech: ["Figma", "Framer", "Motion"],
-    icon: Palette
-  }
+ 
 ];
 
 const Portfolio = () => {

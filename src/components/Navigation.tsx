@@ -37,12 +37,12 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold text-white flex items-center gap-2"
           >
-            <div className="w-8 h-8 bg-neon-purple rounded-lg animate-glow" />
-            PIXEL
+        <img className="w-13 h-24 rounded-lg " src="/Blanco-Photoroom1.png" alt="" />    
+            SUFFETE
           </motion.div>
           
           <div className="hidden md:flex items-center gap-8">
-            {['Home', 'About', 'Portfolio', 'Services', 'Blog', 'Contact'].map((item) => (
+            {['Home', 'About', 'Portfolio', 'Services', 'Contact'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}

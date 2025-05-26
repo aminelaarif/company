@@ -42,7 +42,7 @@ const services = [
     title: "AI Integration",
     description: "Enhance your website with artificial intelligence and machine learning capabilities.",
     price: "Starting at $4,000",
-    features: ["Chatbots", "Predictive Analytics", "Smart Search"]
+    features: ["Chatbots", ]
   },
   {
     icon: Cloud,

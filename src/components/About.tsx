@@ -3,8 +3,8 @@ import { Code, Cpu, Globe, Users, Award, Zap } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Code, value: '250+', label: 'Projects Completed', description: 'Cutting-edge digital solutions' },
-    { icon: Cpu, value: '10+', label: 'Years Experience', description: 'Industry expertise' },
+    { icon: Code, value: '10+', label: 'Projects Completed', description: 'Cutting-edge digital solutions' },
+    { icon: Cpu, value: '4+', label: 'Years Experience', description: 'Industry expertise' },
     { icon: Zap, value: '99%', label: 'Client Satisfaction', description: 'Happy customers' }
   ];
 

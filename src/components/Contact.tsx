@@ -3,9 +3,14 @@ import { Mail, MessageSquare, Phone, MapPin, Clock, Globe } from "lucide-react";
 import { useState } from "react";
 
 const contactInfo = {
-  email: "hello@futureweb.com",
-  phone: "+1 (555) 123-4567",
-  address: "123 Innovation Drive, Silicon Valley, CA 94025",
+  email: (
+    <>
+      contact@suffete.com<br />
+      customersupport@suffete.com<br />
+      iyedmoatemri@protonmail.com
+    </>
+  ),
+  phone: "01-770-746-3371",
   hours: "Mon-Fri: 9:00 AM - 6:00 PM PST",
   social: {
     twitter: "@futureweb",
@@ -66,7 +71,6 @@ const Contact = () => {
             {[
               { icon: Mail, text: contactInfo.email, label: "Email Us" },
               { icon: Phone, text: contactInfo.phone, label: "Call Us" },
-              { icon: MapPin, text: contactInfo.address, label: "Visit Us" },
               { icon: Clock, text: contactInfo.hours, label: "Business Hours" },
               { icon: Globe, text: "Global Service Available", label: "Coverage" },
               { icon: MessageSquare, text: "24/7 Live Chat Support", label: "Chat" },

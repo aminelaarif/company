@@ -25,7 +25,6 @@ const Index = () => {
       <About />
       <Portfolio />
       <Services />
-      <Blog />
       <Contact />
       <Footer />
     </div>
